@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Metal Mania', cursive;
+  
+}
+
+#body-img{
+    background: url("spices.jpg") no-repeat center center/cover;
+}
+
+#logo img{
+    border-radius: 34px;
+    width: 54px;
+    
+}
+
+#navbar{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+#navbar::before{
+    content: "";
+    /* background-color: rgb(236, 207, 185); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /*Jiski value jyada hoti h vo age ata h*/
+    opacity: 0.6;
+}
+
+#logo{
+    margin: 19px;
+
+}
+
+#logo img{
+    margin: -9px -6px -8px 2px;
+    height: 46px;
+   
+
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.2rem;
+  
+}
+
+#navbar ul li a{
+
+  font-size: large;
+    color:black;
+    background-color:rgb(243, 78, 78);
+        display: block;
+ padding: 4px 34px;
+ text-decoration: none;
+ border-radius: 14px;
+ margin: 33px;
+
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(27, 26, 26);
+    color: rgb(245, 240, 240)
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 71px 3px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 32px -2px;
+    height: 385px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /*Jiski value jyada hoti h vo age ata h*/
+    opacity: 0.9;
+   
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 109px 12px 12px 12px;
+    text-align: center;
+    margin: -55px 12px 12px 12px;
+}
+
+
+#home h1{
+    border-radius: 20px;
+    /* background-color: rgb(15, 15, 15); */
+    color:rgb(10, 10, 10);
+    text-align: center;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.btn{
+    font-family: 'Metal Mania', cursive;
+    display: block;
+    margin: 34px;
+font-size: 28px;
+background-color: rgb(243, 78, 78);
+padding: 9px;
+border-radius: 14px;
+cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(27, 26, 26);
+    color: white;
+}
+
+#services-container h1{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 23px;
+    margin: 3px 6px;
+    border-radius: 14px;
+    background-color: rgb(243, 194, 176);
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    border-radius: 24px;
+}
+#services .box h2{
+    text-align: center;
+}
+
+#services .box p{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 12px;
+}
+
+#client-section{
+/* height: 344px; */
+position: relative;
+margin: 107px 35px 0px 0px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("client.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.client-item{
+    padding: 34px;
+    
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#clients img{
+    height: 124px;
+    border-radius: 14px;
+    width:124px;
+}
+
+#contact{
+    margin: 77px 35px 0px 0px;
+
+}
+#contact::before{
+    content: "";
+        position: absolute;
+        width: 100%;
+        height: 111%;
+        z-index: -1;
+        opacity: 0.7;
+        background: url(pic6.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box form{
+    padding-bottom: 12px;
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box input,textarea{
+
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+
+
+/* Responsive  */
+
+@media only screen and (max-width:1140px){
+    .navlist{
+        flex-direction: column;
+    }
+}
